@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<!--------navbar--------->
+    <nav id="navbar-DevFolio" class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container">
+        <a class="navbar-brand" href="#"> <i class="fa-thin fa-cloud-moon"></i> Weather <br> <h6>tagline goes here</h6> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#News">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Live cameras">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Photos">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+     <div class="containeer">
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="find()">find</button>
+        </div>
+        <div class="weather-cards">
+            <div class="card" id="day1">
+                <h3>Day 1</h3>
+                <p>Temperature: <span id="temp1"></span>°C</p>
+                <p>Condition: <span id="condition1"></span></p>
+            </div>
+            <div class="card" id="day2">
+                <h3>Day 2</h3>
+                <p>Temperature: <span id="temp2"></span>°C</p>
+                <p>Condition: <span id="condition2"></span></p>
+            </div>
+            <div class="card" id="day3">
+                <h3>Day 3</h3>
+                <p>Temperature: <span id="temp3"></span>°C</p>
+                <p>Condition: <span id="condition3"></span></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="demo">
+    <div class="logo h-100 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="found text-center">
+                <input type="text" id="cityInput" placeholder="Enter your Email to subscribe">
+                    <button onclick="find()">find</button>
+            </div>
+          <div class="home-content p-5 w-auto">
+            <div class="brand d-flex justify-content-center">
+              <a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+              <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="http://www.behance.com"><i class="fa-brands fa-behance"></i></a>
+              <a href="http://www.youtube.com"><i class="fa-brands fa-square-youtube"></i></a>
+          </div>
+          </div>
+        </div>
+      </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
